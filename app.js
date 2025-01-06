@@ -1,3 +1,12 @@
+
+
+
+const supabaseUrl = 'https://ssabweqykfninyjojvru.supabase.co'
+const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNzYWJ3ZXF5a2ZuaW55am9qdnJ1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzYxMjk4MDAsImV4cCI6MjA1MTcwNTgwMH0.HtCowDf6WtpZjD7lEuzGXVzvGtQu6zmTkU9ayK72NAI"
+const supabaseClient =supabase. createClient(supabaseUrl, supabaseKey)
+
+
+
 const inpu=document.getElementById('inpu')
 const todolist=document.getElementById('todo_list')
 console.log(todolist)

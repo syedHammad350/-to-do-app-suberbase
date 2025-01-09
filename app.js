@@ -17,7 +17,7 @@ console.log(todolist)
   .from('todos')
   .select()
   console.log(data)
-   
+   data.forEach((todo)=> addui(todo))
 
     
 
@@ -60,11 +60,11 @@ async function addtodo(){
 
     
 }
-function addui(){
+function addui(todo){
      const liele=document.createElement('li')
     liele.classList.add("list")
     const span=document.createElement('span')
-    span.innerHTML=inpu.value
+    span.innerHTML=todo.task
     span.classList.add('span')
     const correct_btn=document.createElement('button')
     correct_btn.innerHTML= "&#10003;"
